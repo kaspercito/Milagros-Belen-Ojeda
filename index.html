@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Para Milagros Belén Ojeda✦</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --black:#05040a;
+  --p0:#0d0520;
+  --p1:#1a0a35;
+  --p2:#2d1060;
+  --p3:#5b21b6;
+  --p4:#7c3aed;
+  --p5:#a78bfa;
+  --p6:#c4b5fd;
+  --p7:#ede9fe;
+  --gold:#e2c97e;
+  --white:#faf8ff;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--white);font-family:'Cormorant Garamond',serif;overflow-x:hidden;cursor:none;}
+
+#cur{position:fixed;width:10px;height:10px;background:var(--p5);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:screen;}
+#cur2{position:fixed;width:36px;height:36px;border:1px solid var(--p4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);opacity:.45;}
+#cv{position:fixed;inset:0;z-index:0;pointer-events:none;}
+body::after{content:'';position:fixed;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");pointer-events:none;z-index:1;opacity:.5;}
+#prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--p3),var(--p5),var(--gold));z-index:100;width:0%;transition:width .1s;}
+#nav{position:fixed;right:1.8rem;top:50%;transform:translateY(-50%);z-index:50;display:flex;flex-direction:column;gap:.9rem;}
+.nd{width:7px;height:7px;border-radius:50%;border:1px solid var(--p4);background:transparent;cursor:pointer;transition:all .3s;}
+.nd.active{background:var(--p5);border-color:var(--p5);box-shadow:0 0 8px var(--p5);}
+
+section{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7rem 2rem;}
+
+/* HERO */
+#s0{text-align:center;}
+#s0::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 90% 70% at 50% 50%,#1a0a35 0%,transparent 70%);}
+.particles{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
+.hero-pre{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.5em;color:var(--p5);text-transform:uppercase;opacity:0;animation:fadeUp .9s ease .4s forwards;}
+.hero-name{font-size:clamp(3rem,13vw,10rem);font-weight:300;line-height:.9;letter-spacing:-.02em;margin:.6rem 0;opacity:0;animation:fadeUp 1s ease .7s forwards;}
+.hero-name .first{display:block;color:var(--white);}
+.hero-name .last{display:block;font-style:italic;color:var(--p5);text-shadow:0 0 60px rgba(167,139,250,.4);}
+.hero-line{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--p4),var(--gold),var(--p4),transparent);margin:1.5rem auto;animation:lineGrow 1.2s ease 1.4s forwards;}
+.hero-sub{font-size:1.2rem;font-style:italic;font-weight:300;color:var(--p6);max-width:480px;line-height:1.8;opacity:0;animation:fadeUp .9s ease 1.6s forwards;}
+.hero-from{margin-top:2rem;font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.4em;color:rgba(167,139,250,.5);opacity:0;animation:fadeUp .9s ease 1.9s forwards;}
+.scroll-cta{position:absolute;bottom:2.5rem;display:flex;flex-direction:column;align-items:center;gap:.6rem;opacity:0;animation:fadeIn 1s ease 2.5s forwards;}
+.scroll-cta span{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.35em;color:var(--p5);}
+.scroll-arrow{display:flex;flex-direction:column;align-items:center;gap:3px;}
+.scroll-arrow i{width:1px;height:14px;background:var(--p4);animation:drop 1.5s ease-in-out infinite;display:block;}
+.scroll-arrow i:nth-child(2){animation-delay:.2s;opacity:.6;}
+.scroll-arrow i:nth-child(3){animation-delay:.4s;opacity:.3;}
+
+.div{position:relative;z-index:2;display:flex;align-items:center;gap:1.2rem;padding:0 3rem;}
+.dl{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(124,58,237,.3),transparent);}
+.dg{color:var(--p5);font-size:.9rem;opacity:.7;}
+
+.tag{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.45em;color:var(--p5);text-transform:uppercase;margin-bottom:1.2rem;}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:300;line-height:1.1;text-align:center;margin-bottom:.5rem;}
+.stitle em{color:var(--p5);font-style:italic;}
+.stitle strong{color:var(--gold);font-style:normal;font-weight:600;}
+
+.r{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;}
+.r.v{opacity:1;transform:translateY(0);}
+.r.d1{transition-delay:.1s;}.r.d2{transition-delay:.2s;}.r.d3{transition-delay:.3s;}.r.d4{transition-delay:.4s;}.r.d5{transition-delay:.5s;}
+
+/* ABOUT */
+#s1{background:radial-gradient(ellipse 70% 60% at 40% 50%,#110330 0%,transparent 70%);}
+.about-card{background:linear-gradient(135deg,rgba(45,16,96,.2),rgba(91,33,182,.08));border:1px solid rgba(167,139,250,.2);border-radius:3px;padding:2.8rem 3.5rem;position:relative;backdrop-filter:blur(8px);max-width:660px;width:100%;margin-top:2.5rem;}
+.about-card::before{content:'❝';position:absolute;top:-1.5rem;left:2.5rem;font-size:4.5rem;color:rgba(91,33,182,.35);line-height:1;}
+.about-card p{font-size:1.15rem;font-style:italic;font-weight:300;line-height:2;color:var(--p7);}
+.about-card p+p{margin-top:1.2rem;}
+.about-card strong{color:var(--p5);font-style:normal;font-weight:600;}
+.about-card .gold{color:var(--gold);}
+.about-sign{margin-top:1.8rem;text-align:right;font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.25em;color:var(--p5);opacity:.7;}
+
+/* MEMORIES */
+#s2{background:radial-gradient(ellipse 80% 60% at 60% 40%,#0d0220 0%,transparent 70%);}
+.mem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:780px;width:100%;margin-top:2.8rem;}
+.mem-card{background:rgba(255,255,255,.025);border:1px solid rgba(167,139,250,.12);border-radius:3px;padding:2rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1rem;transition:border-color .3s,background .3s,transform .3s;cursor:default;}
+.mem-card:hover{border-color:rgba(167,139,250,.45);background:rgba(124,58,237,.1);transform:translateY(-4px);}
+.mem-icon{font-size:2rem;}
+.mem-label{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.3em;color:var(--p5);text-transform:uppercase;}
+.mem-text{font-size:1rem;font-style:italic;color:var(--p6);text-align:center;line-height:1.7;}
+
+/* GRADUATION */
+#s3{background:radial-gradient(ellipse 80% 70% at 50% 50%,#130428 0%,transparent 70%);}
+.grad-outer{position:relative;max-width:640px;width:100%;margin-top:2.5rem;}
+.grad-glow{position:absolute;inset:-30px;background:radial-gradient(ellipse at center,rgba(124,58,237,.15) 0%,transparent 70%);pointer-events:none;animation:breathe 4s ease-in-out infinite;}
+.grad-card{background:linear-gradient(160deg,rgba(45,16,96,.25),rgba(91,33,182,.1));border:1px solid rgba(167,139,250,.3);border-radius:3px;padding:3.5rem 4rem;text-align:center;position:relative;backdrop-filter:blur(12px);}
+.grad-card::before{content:'✦';position:absolute;top:-.7rem;left:50%;transform:translateX(-50%);background:var(--black);padding:0 .8rem;color:var(--gold);font-size:1rem;}
+.grad-card::after{content:'✦';position:absolute;bottom:-.7rem;left:50%;transform:translateX(-50%);background:var(--black);padding:0 .8rem;color:var(--gold);font-size:1rem;}
+.grad-year{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.5em;color:var(--gold);margin-bottom:1.5rem;}
+.grad-main{font-size:clamp(1.1rem,2.5vw,1.5rem);font-style:italic;font-weight:300;line-height:1.9;color:var(--white);}
+.grad-main strong{color:var(--p5);font-weight:600;}
+.grad-main .gold{color:var(--gold);}
+
+/* HONEST */
+#s4{background:radial-gradient(ellipse 70% 60% at 35% 55%,#0f0325 0%,transparent 70%);}
+.honest-wrap{max-width:660px;width:100%;margin-top:2.5rem;}
+.honest-block{background:rgba(255,255,255,.02);border-left:2px solid var(--p4);padding:1.8rem 2.2rem;margin-bottom:1.2rem;border-radius:0 3px 3px 0;transition:border-color .3s,background .3s;}
+.honest-block:hover{border-color:var(--p5);background:rgba(124,58,237,.07);}
+.honest-block .label{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.35em;color:var(--p5);margin-bottom:.7rem;}
+.honest-block p{font-size:1.1rem;font-style:italic;line-height:1.9;color:var(--p7);font-weight:300;}
+.honest-block p strong{color:var(--white);font-style:normal;}
+.honest-block .gold{color:var(--gold);}
+
+/* DREAMS */
+#s5{background:radial-gradient(ellipse 80% 60% at 65% 45%,#12042a 0%,transparent 70%);}
+.dreams-list{max-width:620px;width:100%;margin-top:2.5rem;display:flex;flex-direction:column;gap:.8rem;}
+.dream-row{display:flex;align-items:center;gap:1.5rem;padding:1.4rem 2rem;background:rgba(255,255,255,.02);border:1px solid rgba(167,139,250,.1);border-radius:3px;transition:all .3s;position:relative;overflow:hidden;}
+.dream-row::before{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:linear-gradient(90deg,rgba(124,58,237,.15),transparent);transition:width .4s;}
+.dream-row:hover::before{width:100%;}
+.dream-row:hover{border-color:rgba(167,139,250,.4);}
+.dream-num{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.2em;color:var(--p4);min-width:1.8rem;}
+.dream-row p{font-size:1.05rem;font-style:italic;color:var(--p6);line-height:1.6;position:relative;z-index:1;}
+.dream-row p strong{color:var(--white);}
+
+/* GIFTS */
+#s6{background:radial-gradient(ellipse 70% 60% at 50% 50%,#1a0a35 0%,transparent 70%);}
+.gifts-wrap{max-width:640px;width:100%;}
+.gift-note{font-size:1rem;font-style:italic;color:var(--p5);margin:-0.5rem 0 2.5rem;text-align:center;}
+.gift-row{display:flex;gap:1.5rem;align-items:flex-start;padding:1.6rem 0;border-bottom:1px solid rgba(167,139,250,.1);}
+.gift-row:last-of-type{border-bottom:none;}
+.gift-n{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;color:var(--p4);padding-top:.2rem;min-width:2rem;}
+.gift-title{font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:.3rem;}
+.gift-desc{font-size:.95rem;font-style:italic;color:var(--p6);line-height:1.7;}
+.gift-actions{display:flex;gap:1rem;margin-top:2.8rem;flex-wrap:wrap;}
+.btn-main{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.35em;color:var(--black);background:linear-gradient(135deg,var(--p3),var(--p5));border:none;padding:.9rem 2rem;cursor:pointer;text-transform:uppercase;transition:opacity .3s,transform .2s;}
+.btn-main:hover{opacity:.85;transform:translateY(-2px);}
+.btn-sec{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.35em;color:var(--p5);background:transparent;border:1px solid rgba(167,139,250,.3);padding:.9rem 2rem;cursor:pointer;text-transform:uppercase;transition:all .3s;}
+.btn-sec:hover{border-color:var(--p5);background:rgba(124,58,237,.1);}
+.claimed{display:none;margin-top:1.5rem;font-style:italic;font-size:1.1rem;color:var(--p5);}
+
+/* CLOSING */
+#s7{text-align:center;background:radial-gradient(ellipse 90% 70% at 50% 50%,#1a0a35 0%,transparent 70%);padding-bottom:8rem;}
+.closing-star{font-size:2.8rem;color:var(--p5);display:block;margin-bottom:2rem;animation:spin 20s linear infinite;}
+.closing-big{font-size:clamp(1.8rem,5vw,3.5rem);font-weight:300;line-height:1.4;max-width:600px;}
+.closing-big em{color:var(--p5);font-style:italic;}
+.closing-big strong{color:var(--gold);font-style:normal;}
+.closing-line{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--p4),transparent);margin:2.5rem auto;}
+.closing-small{font-size:1.1rem;font-style:italic;color:var(--p6);max-width:420px;line-height:1.8;}
+.closing-footer{margin-top:3.5rem;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.4em;color:rgba(167,139,250,.35);}
+
+.heart-float{position:fixed;pointer-events:none;animation:floatHeart linear forwards;z-index:9999;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes lineGrow{from{width:0;}to{width:200px;}}
+@keyframes drop{0%,100%{opacity:1;}50%{opacity:.2;}}
+@keyframes breathe{0%,100%{opacity:.6;transform:scale(1);}50%{opacity:1;transform:scale(1.06);}}
+@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes floatHeart{0%{transform:translateY(0) scale(1);opacity:.8;}100%{transform:translateY(-100px) scale(.4);opacity:0;}}
+
+@media(max-width:650px){
+  .mem-grid{grid-template-columns:1fr 1fr;}
+  .about-card,.grad-card{padding:2rem 1.5rem;}
+  #nav{display:none;}
+  .gift-actions{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur2"></div>
+<canvas id="cv"></canvas>
+<div id="prog"></div>
+<div id="nav">
+  <div class="nd active" onclick="window.scrollTo({top:0,behavior:'smooth'})"></div>
+  <div class="nd" onclick="gs(1)"></div>
+  <div class="nd" onclick="gs(2)"></div>
+  <div class="nd" onclick="gs(3)"></div>
+  <div class="nd" onclick="gs(4)"></div>
+  <div class="nd" onclick="gs(5)"></div>
+  <div class="nd" onclick="gs(6)"></div>
+  <div class="nd" onclick="gs(7)"></div>
+</div>
+
+<!-- HERO -->
+<section id="s0">
+  <div class="particles" id="ptcls"></div>
+  <p class="hero-pre">Esto es para ti,</p>
+  <h1 class="hero-name">
+    <span class="first">Milagros</span>
+    <span class="last">Belén</span>
+    <span class="first">Ojeda</span>
+  </h1>
+  <div class="hero-line"></div>
+  <p class="hero-sub">Hay personas que se convierten en algo tan importante que es difícil explicarlo con palabras. Tú eres una de esas personas.</p>
+  <p class="hero-from">De Miguel Angel Salazar&nbsp;·&nbsp;</p>
+  <div class="scroll-cta">
+    <span>Continúa</span>
+    <div class="scroll-arrow"><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✦</div><div class="dl"></div></div>
+
+<!-- ABOUT -->
+<section id="s1">
+  <p class="tag r">Para ti</p>
+  <h2 class="stitle r">Lo que eres<br/><em>para mí</em></h2>
+  <div class="about-card r d1">
+    <p>Belén, ratita linda, no sé si alguna vez te has dado cuenta de lo que representas. Eres de esas personas que <strong>se meten sin permiso</strong> y de repente ya no puedes imaginar los días sin ellas.</p>
+    <p>Me importas de una manera que a veces no sé cómo decirte. Y sí, peleamos, discutimos, nos frustramos — pero eso también es parte de lo real. <strong class="gold">Lo que no es de mentira duele y alegra al mismo tiempo.</strong></p>
+    <p>No te escribo esto para presionarte. Te escribo porque <strong>me importas demasiado como para no decírtelo.</strong></p>
+    <p class="about-sign">— Miguel Angel</p>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✧</div><div class="dl"></div></div>
+
+<!-- MEMORIES -->
+<section id="s2">
+  <p class="tag r">Lo que llevamos</p>
+  <h2 class="stitle r">Cosas que <em>compartimos</em><br/>y que no se olvidan</h2>
+  <div class="mem-grid">
+    <div class="mem-card r d1"><span class="mem-icon">🎮</span><span class="mem-label">Videojuegos</span><p class="mem-text">Esas sesiones donde el tiempo desaparece y solo existen la pantalla y tú.</p></div>
+    <div class="mem-card r d2"><span class="mem-icon">🎵</span><span class="mem-label">Música</span><p class="mem-text">Canciones que suenan y de repente estás ahí, aunque estés en Argentina.</p></div>
+    <div class="mem-card r d3"><span class="mem-icon">🎬</span><span class="mem-label">Series y películas</span><p class="mem-text">Ver algo juntos, aunque sea en pantallas distintas a miles de kilómetros.</p></div>
+    <div class="mem-card r d4"><span class="mem-icon">🌙</span><span class="mem-label">Hablar de noche</span><p class="mem-text">Conversaciones que empiezan sobre nada y terminan siendo sobre todo.</p></div>
+    <div class="mem-card r d5"><span class="mem-icon">🌍</span><span class="mem-label">La distancia</span><p class="mem-text">Ecuador y Argentina. Y aun así, aquí estamos.</p></div>
+    <div class="mem-card r d3"><span class="mem-icon">💜</span><span class="mem-label">Lo que somos</span><p class="mem-text">Algo difícil de nombrar, pero imposible de ignorar.</p></div>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✦</div><div class="dl"></div></div>
+
+<!-- GRADUATION -->
+<section id="s3">
+  <p class="tag r">Un sueño que cargo</p>
+  <h2 class="stitle r">El día más importante<br/><em>y quiero que estés</em></h2>
+  <div class="grad-outer r d2">
+    <div class="grad-glow"></div>
+    <div class="grad-card">
+      <p class="grad-year">✦ 2027 · Mi Graduación ✦</p>
+      <p class="grad-main">
+        Cuando imagino ese día,<br/>
+        cuando me imagino cruzando ese escenario<br/>
+        con un título en la mano y todo el camino recorrido...<br/><br/>
+        <strong>Sueño poder tenerte ahí.</strong><br/><br/>
+        Y verte no en el fondo. <span class="gold">En el centro.</span><br/>
+        Como alguien que merece estar ahí<br/>
+        porque fue parte de mi camino.<br/><br/>
+        Sueño con buscarte entre la gente y encontrarte.<br/>
+        <strong>Ese es mi sueño, y quiero que estés ahí.</strong>
+      </p>
+      <div style="margin-top:2rem;width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin-left:auto;margin-right:auto;"></div>
+    </div>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✧</div><div class="dl"></div></div>
+
+<!-- HONEST -->
+<section id="s4">
+  <p class="tag r">Sin filtros</p>
+  <h2 class="stitle r">Lo <em>honesto</em></h2>
+  <div class="honest-wrap">
+    <div class="honest-block r d1">
+      <p class="label">Sobre las peleas</p>
+      <p>Sí, peleamos. A veces <strong>yo me pongo pesado</strong>, lo sé. A veces pido cosas en el momento equivocado. No soy perfecto y nunca voy a fingir que lo soy.</p>
+    </div>
+    <div class="honest-block r d2">
+      <p class="label">Sobre lo de antes de ayer</p>
+      <p>Me dolió. No voy a mentirte. Llevar tiempo pidiendo algo y que no pase duele. Pero también entiendo que <strong>cada quien tiene su momento y sus razones.</strong></p>
+    </div>
+    <div class="honest-block r d3">
+      <p class="label">Lo que de verdad siento</p>
+      <p>Que a pesar de todo, <strong>sigues siendo importante para mí.</strong> Que cuando dices que te importo, lo creo. Que quiero que estés bien.</p>
+    </div>
+    <div class="honest-block r d4">
+      <p class="label">Lo que prometo</p>
+      <p>Estar siempre para tí. Estar cuando me necesites. Y <span class="gold">no rendirme</span> — no de manera desesperada, sino de quien sabe que eres lo mejor del mundo.</p>
+    </div>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✦</div><div class="dl"></div></div>
+
+<!-- DREAMS -->
+<section id="s5">
+  <p class="tag r">Lo que imagino</p>
+  <h2 class="stitle r">Cosas que <em>deseo</em><br/>que sucedan</h2>
+  <div class="dreams-list">
+    <div class="dream-row r d1"><span class="dream-num">01</span><p>Que podamos <strong>jugar juntos</strong> algún día, sin apuros ni excusas de tiempo.</p></div>
+    <div class="dream-row r d2"><span class="dream-num">02</span><p>Que estés en mi <strong>graduación en 2027</strong>. En serio. Ese es un sueño concreto.</p></div>
+    <div class="dream-row r d3"><span class="dream-num">03</span><p>Que cuando estés lista, <strong>podamos intentarlo de nuevo</strong> — con más calma y más madurez.</p></div>
+    <div class="dream-row r d4"><span class="dream-num">04</span><p>Que la distancia entre Ecuador y Argentina <strong>algún día sea solo un detalle.</strong></p></div>
+    <div class="dream-row r d5"><span class="dream-num">05</span><p>Que nunca dejes de saber lo <strong>importante que eres</strong> — para mí y para todos.</p></div>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✧</div><div class="dl"></div></div>
+
+<!-- GIFTS -->
+<section id="s6">
+  <p class="tag r">Tuyo, que no lo olvides</p>
+  <h2 class="stitle r">Cosas que te <em>pertenecen</em></h2>
+  <div class="gifts-wrap r d1">
+    <p class="gift-note">Recuerdos y cosas guardadas para ti 🎁</p>
+
+    <div class="gift-row r d1">
+      <span class="gift-n">01</span>
+      <div>
+        <p class="gift-title">Lo que creo que no alcanzaste a reclamar</p>
+        <p class="gift-desc">
+          <a href="https://kaspercito.github.io/Mujer-de-mi-Vida/" 
+             target="_blank"
+             style="color:#a78bfa; text-decoration:underline; font-style:italic;">
+            ✦ Ver tu regalo ✦
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="gift-row r d2">
+      <span class="gift-n">02</span>
+      <div><p class="gift-title">Partidas pendientes 🎮</p><p class="gift-desc">Las sesiones de juego que nunca tuvimos. Siguen en deuda, y las espero con gusto.</p></div>
+    </div>
+
+    <div class="gift-row r d3">
+      <span class="gift-n">03</span>
+      <div><p class="gift-title">Mi tiempo, siempre</p><p class="gift-desc">Cuando lo necesites, aquí voy a estar. Eso nunca caduca.</p></div>
+    </div>
+
+    <div class="gift-row r d4">
+      <span class="gift-n">04</span>
+      <div><p class="gift-title">Me gustaría entregarte tantas cosas</p><p class="gift-desc">Cuando necesites algo, siempre quiero que cuentes conmigo.</p></div>
+    </div>
+
+    <p class="claimed" id="claimedMsg"></p>
+  </div>
+</section>
+
+<div class="div"><div class="dl"></div><div class="dg">✦</div><div class="dl"></div></div>
+
+<!-- CLOSING -->
+<section id="s7">
+  <span class="closing-star r">✦</span>
+  <p class="closing-big r d1">
+    No importa el tiempo,<br/>
+    no importa la distancia.<br/>
+    Tú siempre vas a ser<br/>
+    <em>algo especial</em> para mí,<br/>
+    <strong>hermosa.</strong>
+  </p>
+  <div class="closing-line r d2"></div>
+  <p class="closing-small r d3">Gracias por existir, por ser como eres, por los momentos buenos y también por los difíciles. Todo eso me importa, porque tú me importas.</p>
+  <p class="closing-footer r d4">Hecho con amor · Miguel Angel ·</p>
+</section>
+
+<script>
+// CURSOR
+const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
+let mx=0,my=0,tx=0,ty=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function tr(){tx+=(mx-tx)*.1;ty+=(my-ty)*.1;cur2.style.left=tx+'px';cur2.style.top=ty+'px';requestAnimationFrame(tr);})();
+
+// PROGRESS + NAV
+const secs=Array.from(document.querySelectorAll('section'));
+const nds=document.querySelectorAll('.nd');
+window.addEventListener('scroll',()=>{
+  document.getElementById('prog').style.width=(window.scrollY/(document.body.scrollHeight-window.innerHeight)*100)+'%';
+  let ci=-1;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<=window.innerHeight*.5)ci=i;});
+  nds.forEach((n,i)=>n.classList.toggle('active',i===ci));
+});
+function gs(i){secs[i].scrollIntoView({behavior:'smooth'});}
+
+// STARS
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+let stars=[];
+function resize(){cv.width=window.innerWidth;cv.height=window.innerHeight;mkStars();}
+function mkStars(){stars=[];for(let i=0;i<240;i++)stars.push({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.3+.2,alpha:Math.random(),sp:Math.random()*.005+.001,ph:Math.random()*Math.PI*2,c:Math.random()>.65?'#a78bfa':'#faf8ff'});}
+resize();window.addEventListener('resize',resize);
+let t=0;
+(function draw(){t+=.012;ctx.clearRect(0,0,cv.width,cv.height);stars.forEach(s=>{const a=.2+.8*Math.abs(Math.sin(t*s.sp*80+s.ph));ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=s.c;ctx.globalAlpha=a;ctx.fill();});ctx.globalAlpha=1;requestAnimationFrame(draw);})();
+
+// PARTICLES
+(function(){
+  const p=document.getElementById('ptcls');
+  for(let i=0;i<20;i++){
+    const d=document.createElement('div');
+    const size=Math.random()*4+1,dur=Math.random()*8+6,delay=Math.random()*5,dist=Math.floor(Math.random()*35+15);
+    d.style.cssText=`position:absolute;width:${size}px;height:${size}px;border-radius:50%;background:${Math.random()>.5?'#7c3aed':'#a78bfa'};left:${Math.random()*100}%;top:${Math.random()*100}%;opacity:${Math.random()*.4+.1};animation:ptcl${i} ${dur}s ease-in-out ${delay}s infinite;`;
+    document.head.insertAdjacentHTML('beforeend',`<style>@keyframes ptcl${i}{0%,100%{transform:translateY(0);}50%{transform:translateY(-${dist}px);}}</style>`);
+    p.appendChild(d);
+  }
+})();
+
+// REVEAL
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');obs.unobserve(x.target);}}),{threshold:.1});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+// CLICK HEARTS
+document.addEventListener('click',e=>{
+  ['💜','✦','🌙','⭐','💫'].forEach((em,i)=>{
+    if(Math.random()>.4)return;
+    const h=document.createElement('span');
+    h.className='heart-float';
+    h.textContent=em;
+    const angle=Math.random()*60-30;
+    h.style.cssText=`left:${e.clientX+Math.random()*40-20}px;top:${e.clientY}px;font-size:${Math.random()*12+10}px;animation-duration:${Math.random()*.6+.7}s;transform:rotate(${angle}deg);`;
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),1400);
+  });
+});
+
+// GIFTS
+function claimIt(){
+  document.querySelector('.btn-main').style.display='none';
+  document.querySelector('.btn-sec').style.display='none';
+  const m=document.getElementById('claimedMsg');
+  m.style.display='block';
+  m.textContent='¡Anotado, Belén! 💜 Cuando quieras, avisame y te doy todo lo que es tuyo.';
+}
+function laterIt(){
+  document.querySelector('.btn-sec').style.display='none';
+  const m=document.getElementById('claimedMsg');
+  m.style.display='block';
+  m.textContent='Sin apuro 🌙 Aquí va a estar cuando lo quieras reclamar.';
+}
+</script>
+</body>
+</html>
